@@ -1,0 +1,249 @@
+:root{
+    --color-primario:#F3F5FC;
+    --color-secundario:#0A3871;
+    --color-terciario:#495057;
+ 
+
+    --color-hover:#272727;
+ }
+ 
+
+*{
+background:var(--color-primario);
+font-family: Inter;
+font-size: 32px;
+font-weight: 400;
+line-height: 48px;
+/* text-align: left; */
+}
+
+#copiar {
+    display: none;
+}
+
+.logo{
+    width: 10px;
+    margin-left: 10px;
+    width: 5%;
+    
+}
+
+main{
+    display: flex;
+   margin-bottom: 50px;
+   margin-left: 80px;
+}
+
+.text-area{
+    border: none;
+    color: var(--color-secundario);
+    margin-top: 50px;
+    margin-bottom: 1px; /* Ajusta este valor según necesites */
+    text-transform: lowercase;
+    margin-left: 40px;
+}
+::placeholder{color:var(--color-secundario)}
+.text-area:focus{
+    outline: none;
+    border: 2px solid var(--color-secundario); /* Agregar borde azul */
+
+}
+
+
+.mensaje{
+background: var(--color-primario);
+background-image: url("../assets/muneco.png");
+background-repeat: no-repeat;
+border: none;
+border-radius: 32px;
+color: var(--color-secundario);
+margin-left: 98px;
+padding-left: 20px;
+position: fixed;
+width: 400px;
+height: 581px;
+text-align: center;
+}
+
+
+
+.parrafos{
+  
+    background: var(--color-primario);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 32px;
+    color: var(--color-secundario);
+    margin-left: 98px;
+    padding-left: 20px;
+    position: fixed;
+    width: 400px;
+    height: 944px;
+    text-align: center;
+    margin-top: 322px;
+  
+}
+
+    .informacion{
+        color: var(--color-terciario);
+        font-size: 18px;
+    
+    }
+    
+    
+    .parrafos .small-text {
+        font-size: 0.8em;
+    }
+    
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar{
+    background: #D8DFE8;
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    color: var(--color-secundario);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+
+}
+
+.btn-encriptar{
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    color: var(--color-primario);
+    cursor: 67px;
+    width: 328px;
+
+}
+
+.btn-copiar{
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    color: var(--color-secundario);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 632px;
+    position: absolute;
+    width: 336px;
+    
+    
+}
+
+
+
+
+@media screen and (max-width: 768px)  {
+    main {
+        display: block;
+    }
+    section {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+.botones{
+    width: 580px;
+}
+
+
+
+.parrafos{
+    background: var(--color-primario);
+    border: none;
+    color: var(--color-secundario);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+margin-top: 3px;
+}
+
+
+.mensaje {
+    position: static;
+    margin: 20px 0;
+    width: 100%;
+    height: 180px;
+    background: none;
+    text-align: left;
+    display: none;
+}
+.btn-copiar {
+    position: static;
+    margin-top: 20px;
+    margin-left:3px;
+    width:580px;
+   
+
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 375px)  {
+    *{
+        padding:-10 10 -10 -10;
+        margin: -10 10 -10 -10;
+    }
+    main {
+        display: block;
+    }
+   
+
+    .botones{
+    width: 300px;
+}
+
+.text-area{
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 340px;
+}
+
+.informacion{
+    width: 300px;
+}
+
+
+.parrafos{
+    background: var(--color-primario);
+    border: none;
+    color: var(--color-secundario);
+    width: 300px;
+    height: 300px;
+    text-align: lpx;
+margin-top: 3px;
+margin-left: -30px;
+}
+
+.mensaje {
+    position: static;
+    margin: 20px 0;
+    width: 300px;
+    height: 180px;
+    background: none;
+    text-align: left;
+    display: none;
+}
+.btn-copiar {
+    position: static;
+    margin-top: 20px;
+    width:300px;
+   
+
+}
+
+}
+
